@@ -1,10 +1,11 @@
 <template>
   <div>
     <h3>{{ user.name }}</h3>
-    <div class="data"><strong>E-mail:</strong> {{ user.email }}</div>
-    <div class="data"><strong>Phone:</strong> {{ user.phone }}</div>
-    <div class="data"><strong>City:</strong> {{ user.city }}</div>
-    <div class="data"><strong>Languages:</strong> {{ user.lang }}</div>
+    <div class="data"><strong>이메일:</strong> {{ user.email }}</div>
+    <!-- <div class="data"><strong>Phone:</strong> {{ user.phone }}</div> -->
+    <div class="data"><strong>거주도시:</strong> {{ user.city }}</div>
+    <!-- <div class="data"><strong>Languages:</strong> {{ user.lang }}</div> -->
+    <div class="data"><strong>생년월일:</strong> {{ user.birth }}</div>
     <SocialBar :links="links"/>
   </div>
 </template>

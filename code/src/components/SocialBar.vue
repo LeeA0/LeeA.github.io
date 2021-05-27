@@ -1,7 +1,7 @@
  <template>
   <div class="social-wrap">
     <ul>
-      <li>
+      <!-- <li>
         <a :href="links.metadata.facebook" target="_blank">
           <font-awesome-icon class="icon" :icon="['fab', 'facebook-square']" />
         </a>
@@ -15,7 +15,7 @@
         <a :href="links.metadata.linkedin" target="_blank">
           <font-awesome-icon class="icon" :icon="['fab', 'linkedin']" />
         </a>
-      </li>
+      </li> -->
       <li>
         <a :href="links.metadata.github" target="_blank">
           <font-awesome-icon class="icon" :icon="['fab', 'github-square']" />

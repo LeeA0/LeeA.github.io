@@ -77,6 +77,7 @@ export default {
         phone: user_data.metadata.phone,
         city: user_data.metadata.city,
         lang: user_data.metadata.lang,
+        birth : user_data.metadata.birth,
         photo: user_data.metadata.photo,
       }
       this.isLoaded = true;
