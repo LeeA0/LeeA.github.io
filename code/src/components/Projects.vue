@@ -20,7 +20,26 @@
         :color="post.color"
         :category="post.tag"
         icon="code"
-      />
+      >
+      <h2>담당 역할</h2>
+      <p>{{post.role}}</p>
+      <h2>참여 인원</h2>
+      <p>{{post.num}}</p>
+      <h2>기술 스택</h2>
+      <q-chip outline dense color="amber-5" text-color="white" v-for="(skill, index) in post.skills" :key="index">
+      {{skill}}
+      </q-chip>
+      <h2>상세 구현</h2>
+      <li v-for="(detail, index) in post.details" :key="index">{{detail}}</li>
+      <h2>성과 및 결과</h2>
+      <li v-for="(result, index) in post.results" :key="index">{{result}}</li>
+      <br><br>
+      <h2>Link</h2>
+      <a :href='post.link'>{{post.link}}</a>
+      <br>
+      <h2>GitHub</h2>
+      <a :href='post.github'>{{post.github}}</a>
+      </vue-timeline-update>
 		</AnimateOnVisible>
       </article>
     </div>
@@ -82,6 +101,13 @@ article .inner {
     }
     h1{
         font-size: 3rem;
+    }
+    h2{
+      font-size: 2rem;
+    }
+    a,p,li{
+      color: #ffca28;
+      font-size: 1.2em;
     }
 }
 
