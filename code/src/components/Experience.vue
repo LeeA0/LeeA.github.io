@@ -13,7 +13,7 @@
 			<div class="row">
 				<ExperienceColumn
 					:posts="content.metadata.academic"
-					title="학력"
+					title="교육"
 					class="col-12 col-md left"
 				/>
 				<ExperienceColumn

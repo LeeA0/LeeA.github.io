@@ -29,10 +29,10 @@
       <q-chip outline dense color="amber-5" text-color="white" v-for="(skill, index) in post.skills" :key="index">
       {{skill}}
       </q-chip>
-      <h2>상세 구현</h2>
+      <h2>개발 내용</h2>
       <li v-for="(detail, index) in post.details" :key="index">{{detail}}</li>
-      <h2>성과 및 결과</h2>
-      <li v-for="(result, index) in post.results" :key="index">{{result}}</li>
+      <!-- <h2>성과 및 결과</h2> -->
+      <!-- <li v-for="(result, index) in post.results" :key="index">{{result}}</li> -->
       <br><br>
       <h2>Link</h2>
       <a :href='post.link'>{{post.link}}</a>
