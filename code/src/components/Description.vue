@@ -6,15 +6,15 @@
 
         <AnimateOnVisible name="fadeRight" :duration="1">
             <div class="section-content">
-                <div class="container-fluid">
-                    <div class="row justify-content-center">
+                <div class="full-width">
+                    <div class="row justify-center">
                         <Photo :user="user"/>
                     </div>
-                    <div class="row">
-                        <div class="col-md-7 mr-auto card-mobile">
+                    <div class="row justify-center">
+                        <div class="col-sm-7 q-mr-auto card-mobile">
                             <Presentation :content="content"/>
                         </div>
-                        <div class="col-md-4 card-mobile">
+                        <div class="col-sm-4 card-mobile">
                             <PersonnalCard :user="user" :links="links"/>
                         </div>
                     </div>

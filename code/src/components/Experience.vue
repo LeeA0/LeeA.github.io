@@ -9,7 +9,7 @@
     </AnimateOnVisible>
 
 	<AnimateOnVisible name="fadeUp" :duration="1">
-		<div class="container-fluid">
+		<div class="full-width">
 			<div class="row">
 				<ExperienceColumn
 					:posts="content.metadata.academic"
