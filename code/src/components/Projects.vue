@@ -26,8 +26,8 @@
             </q-chip>
             <h2>개발 내용</h2>
             <li v-for="(detail, index) in post.details" :key="'B' + index">{{ detail }}</li>
-            <!-- <h2>성과 및 결과</h2> -->
-            <!-- <li v-for="(result, index) in post.results" :key="index">{{result}}</li> -->
+            <h2 v-if="post.results">성과 및 결과</h2>
+            <li v-for="(result, index) in post.results" :key="'C' + index">{{result}}</li>
             <div class="button q-gutter-sm">
               <q-btn v-if="post.link" id="btn" outline rounded color="orange-6" icon="add_to_home_screen" type="a" :href="post.link" label="Link"/>
               <q-btn id="btn" outline rounded color="cyan-6" icon="fab fa-github" type="a" :href="post.github" label="GitHub"/>
